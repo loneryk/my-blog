@@ -37,14 +37,16 @@ const dialogueConfig = {
 	<ul class="home-hero__dialogue-menu" data-dialogue-menu hidden></ul>
 
 	<div class="home-hero__dialogue-layout">
-		<HeroSticker config={sticker} />
-
 		<div class="home-hero__dialogue-box" data-dialogue-box data-speaker="host">
-			<div class="home-hero__dialogue-body" data-dialogue-click>
-				<div class="home-hero__dialogue-nameplate">
-					<span class="home-hero__dialogue-name" data-dialogue-name>{dialogueConfig.speakers.host}</span>
+			<div class="home-hero__dialogue-main">
+				<HeroSticker config={sticker} />
+
+				<div class="home-hero__dialogue-body" data-dialogue-click>
+					<div class="home-hero__dialogue-nameplate">
+						<span class="home-hero__dialogue-name" data-dialogue-name>{dialogueConfig.speakers.host}</span>
+					</div>
+					<p class="home-hero__dialogue-text" data-dialogue-text aria-live="polite"></p>
 				</div>
-				<p class="home-hero__dialogue-text" data-dialogue-text aria-live="polite"></p>
 			</div>
 
 			<div class="home-hero__dialogue-footer">

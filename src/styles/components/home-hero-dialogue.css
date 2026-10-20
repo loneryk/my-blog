@@ -32,7 +32,7 @@
 	display: flex;
 	flex-direction: column;
 	padding: clamp(1.5rem, 3.5svh, 2.5rem) clamp(1.5rem, 6vw, 8rem)
-		clamp(3.75rem, 6svh, 4.75rem) clamp(2.25rem, 12vw, 14rem);
+		clamp(3.75rem, 6svh, 4.75rem) clamp(1.25rem, 2.5vw, 2.5rem);
 	border-top: 2.5px solid var(--home-hero-ink);
 	background-color: color-mix(
 		in oklch,
@@ -131,10 +131,17 @@
 	outline-offset: 3px;
 }
 
+.home-hero__dialogue-main {
+	display: flex;
+	flex: 1 1 auto;
+	align-items: center;
+	gap: clamp(1rem, 2.5vw, 2rem);
+	min-height: 0;
+}
+
 .home-hero__dialogue-body {
 	position: relative;
-	bottom: 0;
-	left: clamp(2rem, 4vw, 5rem);
+	left: 0;
 	display: grid;
 	min-height: 0;
 	flex: 1 1 auto;
@@ -468,22 +475,24 @@
 }
 
 .home-hero__sticker {
-	position: absolute;
-	bottom: clamp(6rem, 14svh, 11rem);
-	left: clamp(0.5rem, 2.5vw, 3.5rem);
-	z-index: 0;
-	width: min(clamp(25rem, 35vw, 34rem), 78svh);
+	position: relative;
+	flex: 0 0 auto;
+	z-index: 1;
+	width: clamp(9.75rem, 14svh, 10.5rem);
+	aspect-ratio: 1;
 	margin: 0;
 	line-height: 0;
-	filter: drop-shadow(0 1rem 1rem var(--home-hero-shadow));
+	border-radius: 50%;
+	overflow: hidden;
+	filter: drop-shadow(0 0.5rem 0.75rem var(--home-hero-shadow));
 	transition: opacity 180ms ease, transform 180ms ease;
 }
 
 .home-hero__sticker-image {
 	display: block;
 	width: 100%;
-	height: auto;
-	object-fit: contain;
+	height: 100%;
+	object-fit: cover;
 }
 
 .home-hero__sticker-feature {
@@ -691,9 +700,7 @@
 	}
 
 	.home-hero__sticker {
-		bottom: 0.75rem;
-		left: 0;
-		width: min(64vw, 18rem);
+		width: clamp(2.75rem, 10svh, 3.75rem);
 	}
 }
 

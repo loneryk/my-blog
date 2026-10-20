@@ -11,22 +11,22 @@ import { siteConfig } from "./siteConfig";
 // 原先挂在 LinkPreset.Feibichi 的「个人主站」外链收编为第一项，该预设已删除。
 // name 是站长自维护的站点名，展示在 CTA 上，明文即可
 const personalSites: PersonalSite[] = [
-	{
-		name: "个人主站",
-		url: "https://www.mmzhiku.xyz/",
-	},
-	{
-		name: "memos记事本",
-		url: "https://memos.mmzhiku.xyz/",
-	},
-	{
-		name: "站点统计",
-		url: "https://stats.mmzhiku.xyz/share/HZrqqAfVdx1UEVNm",
-	},
-	{
-		name: "工具盒子",
-		url: "https://tool.mmzhiku.xyz/",
-	},
+	// {
+	// 	name: "个人主站",
+	// 	url: "https://www.mmzhiku.xyz/",
+	// },
+	// {
+	// 	name: "memos记事本",
+	// 	url: "https://memos.mmzhiku.xyz/",
+	// },
+	// {
+	// 	name: "站点统计",
+	// 	url: "https://stats.mmzhiku.xyz/share/HZrqqAfVdx1UEVNm",
+	// },
+	// {
+	// 	name: "工具盒子",
+	// 	url: "https://tool.mmzhiku.xyz/",
+	// },
 ];
 
 /**

@@ -7,24 +7,24 @@ const SITE_LANG = "zh_CN";
 
 export const siteConfig: SiteConfig = {
 	// 站点标题
-	title: "MmzMing的博客",
+	title: "loneryk的博客",
 
 	// 站点副标题
-	subtitle: "MmzMing",
+	subtitle: "loneryk",
 
 	// 站点 URL
-	site_url: "https://tblog.mmzhiku.xyz",
+	site_url: "https://www.loneryk.xyz",
 
 	// 站点描述
 	// 同时用作：首页与各功能页的 <meta name="description"> 兜底、JSON-LD 里
 	// WebSite/Person 实体的 description。所以这里写清站点的实际内容方向，
 	// 而不是只写"记录学习与生活"这类无检索价值的通用表述。
 	description:
-		"记录 Java 后端与 AI 工程的实践笔记，涵盖并发编程、接口安全、认证授权、缓存设计、性能优化与 RAG 应用开发。",
+		"",
 
 	// 站点关键词
 	keywords: [
-		"MmzMing",
+		"loneryk",
 		"JAVA",
 		"AI",
 		"Astro",
@@ -67,10 +67,10 @@ export const siteConfig: SiteConfig = {
 			src: "/favicon/favicon-48x48.png",
 			sizes: "48x48",
 		},
-		{
-			src: "/favicon/favicon.svg",
-			sizes: "any",
-		},
+		//{
+		//	src: "/favicon/favicon.svg",
+		//	sizes: "any",
+		//},
 		{
 			src: "/favicon/apple-touch-icon.png",
 			sizes: "180x180",
@@ -95,10 +95,10 @@ export const siteConfig: SiteConfig = {
 			src: "/favicon/android-chrome-512x512.png",
 			sizes: "512x512",
 		},
-		{
-			src: "/favicon/safari-pinned-tab.svg",
-			sizes: "any",
-		},
+		//{
+		//	src: "/favicon/safari-pinned-tab.svg",
+		//	sizes: "any",
+		//},
 	],
 
 	// 导航栏配置
@@ -111,17 +111,17 @@ export const siteConfig: SiteConfig = {
 		// 4. 网络图片: { type: "url", value: "https://example.com/logo.png", alt: "Logo" }
 		logo: {
 			type: "image",
-			value: "assets/images/logo.png",
+			value: "assets/images/logo.jpg",
 			alt: "logo",
 		},
 		// 导航栏标题
-		title: "MmzMing的博客",
+		title: "loneryk的博客",
 		// 全宽导航栏，导航栏是否占满屏幕宽度
 		widthFull: false,
 	},
 
 	// 站点开始日期，用于统计运行天数
-	siteStartDate: "2026-05-07",
+	siteStartDate: "2026-10-20",
 
 	// 站点时区（IANA 时区字符串），用于格式化bangumi、rss里的构建日期时间等等..
 	// 示例："Asia/Shanghai", "UTC", 如果为空，则按照构建服务器的时区进行时区转换
@@ -168,17 +168,17 @@ export const siteConfig: SiteConfig = {
 	// 页面开关配置 - 控制特定页面的访问权限，设为false会返回404
 	pages: {
 		// 友链页面开关
-		friends: true,
+		friends: false,
 		// 打赏页面开关
-		sponsor: true,
+		sponsor: false,
 		// 留言板页面开关，需要配置评论系统
-		guestbook: true,
+		guestbook: false,
 		// 相册页面开关
 		gallery: false,
 		// 收藏API页面开关
 		collections: true,
 		// 音乐可视化页面开关
-		music: true,
+		music: false,
 		// 文档页面开关（/list/ 文章列表，导航栏「文章」下拉里显示为「文档」）
 		postList: true,
 		// 归档页面开关
@@ -248,7 +248,7 @@ export const siteConfig: SiteConfig = {
 	// 归档统计配置
 	archiveStats: {
 		// 年度文章目标，用于计算归档页的完成率
-		annualPostGoal: 50,
+		annualPostGoal: 20,
 	},
 
 	// 图像优化及响应式配置

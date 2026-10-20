@@ -6,23 +6,23 @@ export const homeConfig: HomeConfig = {
 	// 1. public 目录（以 "/" 开头，不优化）："/assets/images/avatar.webp"
 	// 2. src 目录（不以 "/" 开头，自动优化但会增加构建时间，推荐）："assets/images/avatar.webp"
 	// 3. 远程 URL："https://example.com/avatar.jpg"
-	avatar: "assets/images/avatar.webp",
+	avatar: "assets/images/logo.jpg",
 
 	// 资料卡横幅图（导航 Logo 资料卡第一层）
 	// 路径约定与头像一致；留空则回退为「头像模糊放大」当背景
-	avatarBanner: "/assets/images/avatar-banner.webp",
+	avatarBanner: "assets/images/avatar-banner.webp",
 
 	// 名字
-	name: "MmzMing",
+	name: "loneryk",
 
 	// 首页展示名字（留空则使用 name）
-	displayName: "MmzMing",
+	displayName: "loneryk",
 
 	// 职业/身份标签
-	occupation: "[全干工程师 / 技术博主]",
+	occupation: "[软件工程在读 / 后端 /ai]",
 
 	// 个人签名（支持多条，会循环打字+删除效果）
-	bio: ["且视他人之疑目如盏盏鬼火，大胆地去走你的夜路"],
+	bio: ["前路漫漫，道阻且长"],
 
 	hero: {
 		backgroundImage: "/assets/images/home/home.avif",
@@ -52,36 +52,18 @@ export const homeConfig: HomeConfig = {
 			interactionHold: 0.06,
 		},
 		contact: {
-			platform: "B站",
-			handle: "Mmz明崽",
+			platform: "Github",
+			handle: "loneryk",
 		},
 		sticker: {
-			image: "/assets/images/home/character.avif",
-			alt: "黑猫角色贴纸",
-			eye: {
-				xPercent: 41.1,
-				yPercent: 48.2,
-				travelXPercent: 1.4,
-				travelYPercent: 1,
-			},
-			rightEye: {
-				xPercent: 64.1,
-				yPercent: 44.7,
-			},
-			mouth: {
-				xPercent: 53.4,
-				yPercent: 50.7,
-				widthPercent: 7.2,
-				heightPercent: 1.9,
-				rotation: -6,
-				travelScale: 0.45,
-			},
+			image: "assets/images/logo.jpg",
+			alt: "logo",
 		},
-		// galgame 对话框（写死暗黑主题）。内容全部由此驱动，可自由增删
+	//	galgame 对话框（写死暗黑主题）。内容全部由此驱动，可自由增删
 		dialogue: {
 			enabled: true,
 			speakers: {
-				host: "哈基墩",
+				host: "loneryk",
 				visitor: "访客",
 			},
 			menuTitle: "想聊点什么？",
@@ -89,48 +71,46 @@ export const homeConfig: HomeConfig = {
 			autoDelay: 1600,
 			// 默认逐句播放的简介，末句后弹出话题菜单
 			intro: [
-				{ speaker: "host", text: "欸——来客人了喵～随便坐，别客气。" },
-				{ speaker: "host", text: "我是喵墩，老爸在摸鱼，这儿归我管了喵～" },
-				{
-					speaker: "host",
-					text: "对了喵，得搬上简介了~喵找找：且视他人之疑目如盏盏鬼火，大胆地去走你的夜路。",
-				},
-				{ speaker: "host", text: "想打听啥喵？戳戳下面的话题，喵跟你慢慢唠～" },
+				{ speaker: "host", text: "欢迎我的博客，仅仅用作个人前进的记录" },
+				{ speaker: "host", text: "我是loneryk，一个软件工程在读的福州学生，还没有多少成绩，仍在沉淀中" },
+				{ speaker: "host", text: "如果你也同样在沉淀，不妨来和我一起交流交流，一起进步吧" },
+				
+				{ speaker: "host", text: "想聊点什么？" },
 			],
 			// 话题菜单：点击进入逐句对话，末句后返回菜单
 			topics: [
 				{
 					title: "关于我",
 					lines: [
-						{ speaker: "visitor", text: "你爸是哪方面选手呀？" },
+						{ speaker: "visitor", text: "你是怎么样的人" },
 						{
 							speaker: "host",
-							text: "嘛……算个半桶水全栈喵，外加一个不务正业的博客写手。",
+							text: "努力尝试走出舒适圈ing，音乐爱好者，包括不限于，edm ，hiphop，电子，民谣，流行，轻音乐，等等",
 						},
 						{
 							speaker: "host",
-							text: "前端后端都摸一点，俗称「全干工程师」喵～",
+							text: "想让脑中的构想慢慢落地，这样说可能有些过于乐观了（笑）",
 						},
-						{ speaker: "visitor", text: "听起来很忙的样子。" },
+						
 						{
 							speaker: "host",
-							text: "忙归忙，但好玩呀——折腾本身就是浪漫喵～如果你感兴趣也可以加QQ群喵，放心，傻爸爸不咬人的",
+							text: "总之，一个正在努力的人吧",
 						},
 					],
 				},
 				{
-					title: "博客特色",
+					title: "为什么做博客",
 					lines: [
-						{ speaker: "visitor", text: "有什么好玩的功能吗？" },
+						
 						{
 							speaker: "host",
-							text: "有个音乐3D可视化播放，但博客重点不是文章吗喵~老爸整站基本是AI搓出来的，喵爪都没动几下。",
+							text: "记录自己的变化，也希望自己能够对他人产生影响",
 						},
 						{
 							speaker: "host",
-							text: "傻爸爸最近在捣鼓Agent，不知道又要整啥活喵～",
+							text: "博客是个人思考的沉淀，是个人成长的见证，能给自己的记忆一个存档",
 						},
-						{ speaker: "host", text: "慢慢逛，角落里藏着不少彩蛋呢喵！" },
+						// { speaker: "host", text: "慢慢逛，角落里藏着不少彩蛋呢喵！" },
 					],
 				},
 			],
@@ -176,33 +156,33 @@ export const homeConfig: HomeConfig = {
 			cycleDuration: 26,
 			composite: {
 				eyebrow: "PROLOGUE / RUN",
-				title: "筑一间小屋",
+				title: "从此刻开始",
 				description: "以代码为梁、热爱为瓦，荒原上筑起一间自己的小屋。",
 				alt: "第一幕插画",
 				// 明信片右下角的落款日期，按每张图的实际日期改；删掉即不显示
-				date: "2026 / 05 / 07",
+				date: "2026 / 10 / 20",
 			},
 			items: [
 				{
 					eyebrow: "SCENE 02 / LIGHT",
-					title: "小屋落户",
-					description: "一纸备案落定，小屋自此有门有牌，堂堂正正晒着太阳。",
+					title: "灯火阑珊",
+					description: "莫听穿林打叶声",
 					image: "/assets/images/home-blinds/act3/1.webp",
 					alt: "第二幕插画",
 					date: "2026 / 06 / 10",
 				},
 				{
 					eyebrow: "SCENE 03 / WIND",
-					title: "尘满窗台",
-					description: "人往学海拾新，倦意悄悄落了窗，小屋静候，蒙上薄尘。",
+					title: "静待花开",
+					description: "",
 					image: "/assets/images/home-blinds/act3/2.webp",
 					alt: "第三幕插画",
 					date: "2026 / 06 / 21",
 				},
 				{
 					eyebrow: "SCENE 04 / PAGE",
-					title: "重燃灯火",
-					description: "拂去薄尘，重燃灯火，一砖一瓦再把小屋细细打磨。",
+					title: "拥抱未来",
+					description: "不断迭代，不断更新",
 					image: "/assets/images/home-blinds/act3/3.webp",
 					alt: "第四幕插画",
 					date: "2026 / 08 / 18",
@@ -227,35 +207,35 @@ export const homeConfig: HomeConfig = {
 	// `pnpm add @iconify-json/<icon-set-name>`
 	// showName: true 时显示图标和名称，false 时只显示图标
 	links: [
-		{
-			name: "qq",
-			icon: "fa7-brands:qq",
-			url: "https://qm.qq.com/q/2R07cjGTZ0",
-			showName: false,
-		},
-		{
-			name: "B站",
-			icon: "fa7-brands:bilibili",
-			url: "https://space.bilibili.com/15446538",
-			showName: false,
-		},
+		// {
+		// 	name: "qq",
+		// 	icon: "fa7-brands:qq",
+		// 	url: "https://qm.qq.com/q/2R07cjGTZ0",
+		// 	showName: false,
+		// },
+		// {
+		// 	name: "B站",
+		// 	icon: "fa7-brands:bilibili",
+		// 	url: "https://space.bilibili.com/15446538",
+		// 	showName: false,
+		// },
 		{
 			name: "GitHub",
 			icon: "fa7-brands:github",
-			url: "https://github.com/MmzMing",
+			url: "https://github.com/loneryk",
 			showName: false,
 		},
-		{
-			name: "站内留言",
-			icon: "material-symbols:chat-rounded",
-			url: "/guestbook/",
-			showName: false,
-		},
-		{
-			name: "RSS",
-			icon: "fa7-solid:rss",
-			url: "/rss/",
-			showName: false,
-		},
+		// {
+		// 	name: "站内留言",
+		// 	icon: "material-symbols:chat-rounded",
+		// 	url: "/guestbook/",
+		// 	showName: false,
+		// },
+		// {
+		// 	name: "RSS",
+		// 	icon: "fa7-solid:rss",
+		// 	url: "/rss/",
+		// 	showName: false,
+		// },
 	],
 };

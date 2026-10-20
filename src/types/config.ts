@@ -368,17 +368,18 @@ export type HeroContactConfig = {
 export type HeroStickerConfig = {
 	image: string;
 	alt: string;
-	eye: {
+	/** 五官追踪（眼睛/嘴巴跟随鼠标）可选；纯 logo 贴纸无需配置 */
+	eye?: {
 		xPercent: number;
 		yPercent: number;
 		travelXPercent: number;
 		travelYPercent: number;
 	};
-	rightEye: {
+	rightEye?: {
 		xPercent: number;
 		yPercent: number;
 	};
-	mouth: {
+	mouth?: {
 		xPercent: number;
 		yPercent: number;
 		widthPercent: number;

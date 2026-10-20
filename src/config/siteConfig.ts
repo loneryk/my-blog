@@ -13,7 +13,7 @@ export const siteConfig: SiteConfig = {
 	subtitle: "loneryk",
 
 	// 站点 URL
-	site_url: "https://www.loneryk.xyz",
+	site_url: "https://loneryk.xyz",
 
 	// 站点描述
 	// 同时用作：首页与各功能页的 <meta name="description"> 兜底、JSON-LD 里

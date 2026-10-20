@@ -100,6 +100,19 @@ Firefly-Mod 是个性化魔改版本，已独立演进。
 | 重新生成 LQIP 占位数据 | `pnpm lqips` |
 | 推送文章 URL | `pnpm indexnow --diff --dry-run` |
 
+## 文章系统                     # 必填，标题
+  published: 2026-10-20        # 必填，发布日期
+  updated: 2026-10-21          # 可选，最后更新日
+  description: 一句话摘要       # 列表卡片 + 分享卡片里的简介
+  image: ./cover.webp          # 可选，封面图（相对文章的本地图）
+  tags: [Java, 后端]           # 标签
+  category: 技术               # 分类
+  pinned: false                # true = 置顶
+  draft: false                 # true = 草稿，不发布
+  lang: ""                     # 语言，留空用站点默认
+  comment: true                # 是否显示评论
+  # password: 123456           # 可选，设了就要密码才能看
+
 ## LLM Wiki（静态）
 
 项目不在构建阶段运行 Embedding 或 Vectorize。`pnpm build` 会从公开文章集合生成机器入口：

@@ -59,7 +59,7 @@ export const homeConfig: HomeConfig = {
 			image: "assets/images/logo.jpg",
 			alt: "logo",
 		},
-	//	galgame 对话框（写死暗黑主题）。内容全部由此驱动，可自由增删
+		//	galgame 对话框（写死暗黑主题）。内容全部由此驱动，可自由增删
 		dialogue: {
 			enabled: true,
 			speakers: {
@@ -72,9 +72,15 @@ export const homeConfig: HomeConfig = {
 			// 默认逐句播放的简介，末句后弹出话题菜单
 			intro: [
 				{ speaker: "host", text: "欢迎我的博客，仅仅用作个人前进的记录" },
-				{ speaker: "host", text: "我是loneryk，一个软件工程在读的福州学生，还没有多少成绩，仍在沉淀中" },
-				{ speaker: "host", text: "如果你也同样在沉淀，不妨来和我一起交流交流，一起进步吧" },
-				
+				{
+					speaker: "host",
+					text: "我是loneryk，一个软件工程在读的福州学生，还没有多少成绩，仍在沉淀中",
+				},
+				{
+					speaker: "host",
+					text: "如果你也同样在沉淀，不妨来和我一起交流交流，一起进步吧",
+				},
+
 				{ speaker: "host", text: "想聊点什么？" },
 			],
 			// 话题菜单：点击进入逐句对话，末句后返回菜单
@@ -91,7 +97,7 @@ export const homeConfig: HomeConfig = {
 							speaker: "host",
 							text: "想让脑中的构想慢慢落地，这样说可能有些过于乐观了（笑）",
 						},
-						
+
 						{
 							speaker: "host",
 							text: "总之，一个正在努力的人吧",
@@ -101,7 +107,6 @@ export const homeConfig: HomeConfig = {
 				{
 					title: "为什么做博客",
 					lines: [
-						
 						{
 							speaker: "host",
 							text: "记录自己的变化，也希望自己能够对他人产生影响",

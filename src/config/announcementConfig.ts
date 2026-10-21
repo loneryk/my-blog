@@ -38,7 +38,7 @@ export const announcementConfig: AnnouncementConfig = {
 			time: "2025-10-20",
 			link: "/about/",
 			sort: 1,
-		 },
+		},
 	],
 
 	// 是否允许用户关闭公告

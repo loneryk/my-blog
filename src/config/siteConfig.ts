@@ -207,7 +207,7 @@ export const siteConfig: SiteConfig = {
 			scriptUrl: "https://stats.mmzhiku.xyz/script.js",
 			// 使用 Umami 的 PV 展示文章详情、列表与网格浏览量；启用时优先于评论系统统计
 			pageviews: {
-				enabled: true,
+				enabled: false,
 			},
 			// 是否追踪出站链接
 			trackOutboundLinks: true,

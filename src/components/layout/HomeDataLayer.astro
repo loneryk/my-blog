@@ -87,15 +87,16 @@ const articlePills = [
 		tone: "light" as const,
 	},
 ];
-const visitPills = [
-	{ label: "UV", value: "--", tone: "light" as const },
-	{ label: "PV", value: "--", tone: "dark" as const },
-	{
-		label: i18n(I18nKey.siteStatsSource),
-		value: "Umami",
-		tone: "outline" as const,
-	},
-];
+// 访问统计卡已隐藏（数据源仍指向原作者的 Umami）；需要恢复时取消下面的注释
+// const visitPills = [
+// 	{ label: "UV", value: "--", tone: "light" as const },
+// 	{ label: "PV", value: "--", tone: "dark" as const },
+// 	{
+// 		label: i18n(I18nKey.siteStatsSource),
+// 		value: "Umami",
+// 		tone: "outline" as const,
+// 	},
+// ];
 const contactItems = homeConfig.links.map((link) => ({
 	name: link.name,
 	icon: link.icon,
@@ -135,7 +136,8 @@ const statsShareId = umamiConfig?.shareId ?? "";
 		</div>
 
 		<div class="home-data-layer__top-grid">
-			<DataMetricCard title={i18n(I18nKey.siteVisits)} eyebrow="VISITS" detail={i18n(I18nKey.visitsLoading)} icon="material-symbols:visibility-outline-rounded" hoverTitle={i18n(I18nKey.visitTrajectory)} hoverCode="01" variant="square" pills={visitPills} statKind="visits" visualImage={homeConfig.dataLayer.visitImage} />
+			{/* 访问统计卡已隐藏；恢复时取消注释 */}
+			{/* <DataMetricCard title={i18n(I18nKey.siteVisits)} eyebrow="VISITS" detail={i18n(I18nKey.visitsLoading)} icon="material-symbols:visibility-outline-rounded" hoverTitle={i18n(I18nKey.visitTrajectory)} hoverCode="01" variant="square" pills={visitPills} statKind="visits" visualImage={homeConfig.dataLayer.visitImage} /> */}
 			<DataMetricCard title={i18n(I18nKey.articleArchive)} eyebrow="ARCHIVE" detail={`${posts.length}${i18n(I18nKey.postsCount)} · ${formatCompactNumber(totalWords)}${i18n(I18nKey.wordCount)}`} icon="material-symbols:article-outline" hoverTitle={i18n(I18nKey.contentIndex)} hoverCode="02" variant="wide" pills={articlePills} statKind="articles" visualImage={homeConfig.dataLayer.archiveImage} />
 		</div>
 
@@ -623,6 +625,8 @@ const statsShareId = umamiConfig?.shareId ?? "";
 		const statsShareId = layer.dataset.statsShareId;
 		if (!statsBaseUrl || !statsShareId) return;
 		const detail = layer.querySelector<HTMLElement>(".data-card[data-stat-kind='visits'] .data-card__detail");
+		// 访问统计卡被隐藏时不再请求统计接口
+		if (!detail) return;
 		const valueNodes = layer.querySelectorAll<HTMLElement>("[data-stat-value]");
 		shareCache.fetch(async () => {
 			const response = await fetch(`${statsBaseUrl}/api/share/${statsShareId}`);

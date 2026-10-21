@@ -19,7 +19,7 @@ export const homeConfig: HomeConfig = {
 	displayName: "loneryk",
 
 	// 职业/身份标签
-	occupation: "[软件工程在读 / 后端 /ai]",
+	occupation: "[软件工程在读 / 好想成为全干工程师]",
 
 	// 个人签名（支持多条，会循环打字+删除效果）
 	bio: ["前路漫漫，道阻且长"],
@@ -201,7 +201,8 @@ export const homeConfig: HomeConfig = {
 					date: "2026 / 09 / 01",
 				},
 			],
-			standImages: ["/assets/images/home-blinds/act4/1.webp"],
+			// 立牌图；置为空数组则不渲染底部立牌
+			standImages: [],
 		},
 	},
 

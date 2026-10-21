@@ -109,7 +109,7 @@
 
 .home-data-layer__top-grid {
 	display: grid;
-	grid-template-columns: 1fr 2fr;
+	grid-template-columns: 1fr;
 	gap: var(--guide-gap);
 	height: var(--guide-row-height);
 	margin-bottom: var(--guide-gap);

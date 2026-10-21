@@ -19,7 +19,7 @@ export const siteConfig: SiteConfig = {
 	// 同时用作：首页与各功能页的 <meta name="description"> 兜底、JSON-LD 里
 	// WebSite/Person 实体的 description。所以这里写清站点的实际内容方向，
 	// 而不是只写"记录学习与生活"这类无检索价值的通用表述。
-	description: "",
+	description: "loneryk的博客",
 
 	// 站点关键词
 	keywords: [
@@ -116,7 +116,7 @@ export const siteConfig: SiteConfig = {
 		// 导航栏标题
 		title: "loneryk的博客",
 		// 全宽导航栏，导航栏是否占满屏幕宽度
-		widthFull: false,
+		widthFull: true,
 	},
 
 	// 站点开始日期，用于统计运行天数
@@ -200,33 +200,34 @@ export const siteConfig: SiteConfig = {
 		googleAnalyticsId: "",
 		// Microsoft Clarity ID
 		microsoftClarityId: "",
-		// Umami 统计配置
-		umamiAnalytics: {
-			websiteId: "d47eea8b-7ad5-472b-a838-c873ba859c4f",
-			shareId: "HZrqqAfVdx1UEVNm",
-			scriptUrl: "https://stats.mmzhiku.xyz/script.js",
-			// 使用 Umami 的 PV 展示文章详情、列表与网格浏览量；启用时优先于评论系统统计
-			pageviews: {
-				enabled: false,
-			},
-			// 是否追踪出站链接
-			trackOutboundLinks: true,
-			// 是否收集浏览器性能指标
-			collectWebVitals: true,
-			// 会话回放配置
-			relpays: {
-				// 是否启用会话回放
-				enabled: false,
-				// 录制会话采样率，范围 0-1，例如 0.15 表示记录 15% 的会话
-				sampleRate: 0.15,
-				// 隐私遮罩级别："moderate" 会遮罩所有输入框；"strict" 额外遮罩页面全部文本
-				maskLevel: "moderate",
-				// 单次录制最大时长（毫秒）
-				maxDuration: 300000,
-				// 需要排除录制的元素 CSS 选择器，例如 ".sensitive-widget"
-				blockSelector: "",
-			},
-		},
+		// Umami 统计配置（已停用，避免每页加载境外统计脚本影响国内访问）
+		// 恢复时取消整段注释，并填入自己的 websiteId / shareId / scriptUrl
+		// umamiAnalytics: {
+		// 	websiteId: "d47eea8b-7ad5-472b-a838-c873ba859c4f",
+		// 	shareId: "HZrqqAfVdx1UEVNm",
+		// 	scriptUrl: "https://stats.mmzhiku.xyz/script.js",
+		// 	// 使用 Umami 的 PV 展示文章详情、列表与网格浏览量；启用时优先于评论系统统计
+		// 	pageviews: {
+		// 		enabled: false,
+		// 	},
+		// 	// 是否追踪出站链接
+		// 	trackOutboundLinks: true,
+		// 	// 是否收集浏览器性能指标
+		// 	collectWebVitals: true,
+		// 	// 会话回放配置
+		// 	relpays: {
+		// 		// 是否启用会话回放
+		// 		enabled: false,
+		// 		// 录制会话采样率，范围 0-1，例如 0.15 表示记录 15% 的会话
+		// 		sampleRate: 0.15,
+		// 		// 隐私遮罩级别："moderate" 会遮罩所有输入框；"strict" 额外遮罩页面全部文本
+		// 		maskLevel: "moderate",
+		// 		// 单次录制最大时长（毫秒）
+		// 		maxDuration: 300000,
+		// 		// 需要排除录制的元素 CSS 选择器，例如 ".sensitive-widget"
+		// 		blockSelector: "",
+		// 	},
+		// },
 		// 51la 统计配置
 		la51Analytics: {
 			// 51la 统计 ID

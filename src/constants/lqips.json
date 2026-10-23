@@ -3,6 +3,7 @@
 	"public:assets/images/aut.jpg": "8d8692756f7d9c939e",
 	"public:assets/images/aut.webp": "95958ca39f97afaaa0",
 	"public:assets/images/avatar-banner.webp": "aa8e83979aa2b5afb7",
+	"public:assets/images/demo/wide.webp": "d05010b54a17983911",
 	"public:assets/images/friends/2x.webp": "1b191b161616292929",
 	"public:assets/images/friends/amamo.webp": "4f40544d455a4f4568",
 	"public:assets/images/friends/astrvow.webp": "7a968f574237292b25",
@@ -81,5 +82,10 @@
 	"public:gallery/gpt-img2-2026/8.webp": "4c4a438e765dbb9373",
 	"public:gallery/gpt-img2-2026/9.webp": "a6a49ae3ddd3e1dcd1",
 	"src:assets/images/avatar.webp": "958e9a817c89b9aeb4",
-	"src:assets/images/logo.jpg": "2e43831d3173253e80"
+	"src:assets/images/logo.jpg": "2e43831d3173253e80",
+	"src:content/posts/image/图片使用范例.assets/1.webp": "245bd32c58be2046a2",
+	"src:content/posts/image/图片使用范例.assets/2.webp": "7235d86c36c45925ab",
+	"src:content/posts/image/图片使用范例.assets/3.webp": "c6256cb42b66991d51",
+	"src:content/posts/image/图片使用范例.assets/cover.webp": "116d661d6a63135953",
+	"src:content/posts/image/图片使用范例.assets/wide.webp": "d05010b54a17983911"
 }

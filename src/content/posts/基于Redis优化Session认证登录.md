@@ -1,9 +1,9 @@
 ---
 title: 基于Redis优化Session认证登录
-published: '2026-11-25'
+published: 2026-11-25
 description: ''
 image: ''
-tags: [Redis][登录校验]
+tags: [Redis，登录校验]
 category: '技术'
 draft: false
 lang: ''
@@ -26,9 +26,9 @@ Token 返回给前端后，前端后续请求会在请求头 `authorization` 中
 
 ## 为什么是两个拦截器 
 
-这是原本的拦截流程 
 
-[[登录拦截.canvas]]
+
+![这是原本的拦截流程](./image/assets/登录拦截.webp)
 
 可以看到拦截器仅仅是在需要用户登录的接口发挥作用，但如果用户没有在这些需要登录的接口，而只在不需要调用登录的部分浏览，那么这些请求根本不会触发拦截器，也就失去了他本来的作用 这样的业务就造成了一个很反直觉的问题：
 用户明明持续在使用系统 Token却因为从未刷新而过期了
